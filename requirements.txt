@@ -1,8 +1,0 @@
-streamlit
-opencv-python
-openai
-requests
-pillow
-numpy
-python-dotenv
-
