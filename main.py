@@ -16,15 +16,7 @@ st.title("Real-Time Action Recognition")
 load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 
-# With these:
-# For local development with .env file
-if os.path.exists('.env'):
-    from dotenv import load_dotenv
-    load_dotenv()
-    api_key = os.getenv("OPENAI_API_KEY")
-# For Streamlit Cloud deployment
-else:
-    api_key = st.secrets["api_keys"]["openai"]
+
 
 client = OpenAI(api_key=api_key)
 
